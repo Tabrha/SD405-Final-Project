@@ -1,0 +1,240 @@
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bolder;
+    color: red;
+}
+.social-media ul {
+        display:flex;
+        justify-content: space-between;
+}
+
+/* Base styles for common elements */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* Header styles */
+#main-menu {
+    color: #f8f8f8dd;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    font-size: 16px;
+    margin: 50px;
+    width:80%;
+}
+
+
+/* Hero section styles */
+#hero {
+    background-image: url('./pages/img/T2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    margin-top: 20px;   
+}
+
+.container.hero-text {
+    /* background-color:aquamarine; */
+    color:blueviolet;
+    /* width: 400px; */
+    /* position: absolute;
+    bottom: 40px;
+    left: 30px; */
+     padding-left: 20px; 
+    font-weight:bold;
+    font-size: 21px;
+    /* text-transform: uppercase; */
+}
+
+.hero-text .explore-link {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Share button styles */
+#share-button {
+    background-color: lightblue;
+    width: 100px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: fixed;
+   right: 0;
+   z-index: 160;
+   width: 20px;
+   top: 101px;
+   writing-mode: vertical-rl;
+   writing-mode: horizontal-lr;
+   transform: rotate(180deg);
+   padding-left: 30px;
+}
+/* Blog section styles */
+.blog-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 5%;
+    justify-content: space-between; 
+    margin-top: 30px;
+    /* align-items: center; */
+}
+.community-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    /* align-items: center; */
+}
+
+.blog-card {
+    text-align: center;
+}
+
+.blog-card img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.blog-card-text {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Footer styles */
+#footer {
+    background-color: rgb(79, 38, 118);
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    gap: 40px;
+    color: grey;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.footer-column {
+    text-align: justify;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .item {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .item img {
+    max-width: 100%;
+    height: auto;
+  }
+  .carousel-item img {
+    max-height: 300px; 
+  }
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    /* Header styles */
+    #main-menu {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 20px;
+    }
+    
+    #header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+    /* #header.img{
+        width:60%;
+        border-radius: 25%;
+    } */
+
+    #search-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    /* Hero section styles */
+    .hero-text {
+        width: 100%;
+        text-align: center;
+    }
+ 
+    /* Share button styles */ 
+   #share-button {
+       background-color: rgb(81, 163, 191);
+        width: 100px; padding: 10px; 
+       text-transform: uppercase;
+       font-weight: bold; 
+       position:fixed;
+       color: white;
+       right:0;width:20px;top:101px;
+      writing-mode: vertical-rl;
+      writing-mode: horizontal-lr; 
+      transform: rotate(180deg); 
+      padding-left: 30px;
+    }
+
+    /* Blog section styles */
+    .blog-card {
+        flex-basis: 50%;
+    }
+}
+
+/* Additional styles for the second list */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #333; */
+    padding: 10px 20px;
+    font-size: 12px;
+    color: rgb(10, 9, 9);
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+#navbar li {
+    padding: 10px;
+}
+
+/* Media query for second list */
+@media (max-width: 768px) {
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}

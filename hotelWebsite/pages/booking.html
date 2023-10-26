@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking - Diamond Hotel</title>
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="css/booking.css" />
+    <link rel="stylesheet" href="../media-query.css" />
+  </head>
+  <body>
+    <div>
+
+      <ul id="main-menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="aboutus.html">About US</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="../login.html">Login/ Register</a></li>
+      </ul>
+    </div>
+    <header>
+      <h1>Room Reservation</h1>
+    </header>
+    <div style="background-image: url('/hotelWebsite/pages/img/T7.jpg')"/>
+    <section class="booking-form">
+      <!-- Reservation form handled with JavaScript -->
+    </section>
+  </div>
+    
+
+    <script>
+      // Include the footer using JavaScript
+      fetch("../footer.html")
+        .then((response) => response.text())
+        .then((footer) => {
+          document.body.innerHTML += footer;
+        });
+    </script>
+    <script src="js/booking.js"></script>
+  </body>
+</html>

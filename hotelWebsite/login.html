@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Diamond Hotel</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="media-query.css">
+</head>
+
+<body>
+    <div>
+        <ul id="main-menu">
+            <li> <a href="index.html">Home</a> </li>
+            <li><a href="pages/aboutus.html">About US</a></li>
+            <li><a href="pages/rooms.html">Rooms</a></li>
+            <li><a href="pages/booking.html">Booking</a></li>
+            <li><a href="pages/contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login/ Register</a></li>
+
+        </ul>
+    </div>
+    <header>
+        <h1>Login or Create an Account</h1>
+    </header>
+
+    <div style="background-image: url('/hotelWebsite/pages/img/T6.jpg');">
+        <section class="login-form">
+            <!-- Login form and account creation form, handled with JavaScript -->
+            <h2>Create an Account</h2>
+            <div style="width:100%; align-items:center">
+                <form id="account-form">
+                    <input type="text" placeholder="First name" id="first-name">
+                    <input type="text" placeholder="Last name" id="last-name">
+                    <input type="text" placeholder="Phone number" id="phone-number">
+                    <input type="text" placeholder=" Username" id="new-username">
+                    <input type="password" placeholder=" Password" id="new-password">
+                    <button type="submit">Create Account</button>
+                </form>
+            </div>
+            <h2>Login</h2>
+            <div style="width:100%; align-items:center">
+                <form id="login-form">
+                    <input type="text" placeholder="Username" id="username">
+                    <input type="password" placeholder="Password" id="password">
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+   
+    <script>
+        // Include the footer using JavaScript
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(footer => {
+                document.body.innerHTML += footer;
+            });
+    </script>
+ <script src="login.js"></script>
+</body>
+
+</html>

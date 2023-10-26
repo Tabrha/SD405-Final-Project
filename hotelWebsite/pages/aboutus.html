@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Diamond Hotel</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="../media-query.css">
+</head>
+<body>
+    <div>
+        <ul id="main-menu">
+            <li> <a href="../index.html">Home</a>  </li>
+            <li><a href="aboutus.html">About US</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="../login.html">Login/ Register</a></li>
+            
+        </ul>
+    </div>
+<div style="background-image: url('/hotelWebsite/pages/img/T10.jpeg');">
+    <section class="about">
+        <h2>Our Story</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget diam non elit vehicula vestibulum.
+            Curabitur condimentum libero vel ex pellentesque volutpat. Fusce vel ultricies ligula. Sed nec tincidunt
+            nunc. Sed ac condimentum ex. Vivamus scelerisque metus at enim interdum, vel elementum dui efficitur.
+            Maecenas congue eros nec nunc consectetur.
+        </p>
+
+        <h2>Our Team</h2>
+        <p>
+            
+            Get to know the devoted individuals who drive the excellence at our hotel. Our unwavering commitment is to deliver an exceptional experience to our valued guests.
+        </p>
+
+        <ul class="team-members">
+            <li>
+                <img src="/hotelWebsite/pages/img/femaleAvatar.jpg" alt="Team Member 1">
+                <h3>Helen Meles</h3>
+                <p>General Manager</p>
+            </li>
+            <li>
+                <img src="/hotelWebsite/pages/img/maleAvatar.jpg" alt="Team Member 2">
+                <h3>Tesfay Abrha</h3>
+                <p>Marketing Manager</p>
+            </li>
+            <!-- Add more team members as needed -->
+        </ul>
+    </section>
+    
+</div>
+    <script>
+        // Include the footer using JavaScript
+        fetch('../footer.html')
+            .then(response => response.text())
+            .then(footer => {
+                document.body.innerHTML += footer;
+            });
+    </script>
+</body>
+</html>

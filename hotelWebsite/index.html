@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Hotel Website</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media-query.css">
+
+  
+   <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"
+></script>
+
+</head>
+
+<body>
+    <div class="menu" style="display:flex;margin-top:40px;background-color: rgb(188, 132, 240);">
+        <div id="header">
+            <div>
+                <img src="/hotelWebsite/pages/img/hotelDiamond.png" alt="Diamond Hotel Logo"
+                    style=" width:30%;border-radius: 30%;padding-left: 20px;">
+            </div>
+
+        </div>
+        <ul id="main-menu">
+
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="pages/aboutus.html">About US</a></li>
+            <li><a href="pages/rooms.html">Rooms</a></li>
+            <li><a href="pages/booking.html">Booking</a></li>
+            <li><a href="pages/contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login/ Register</a></li>
+
+        </ul>
+    </div>
+
+    <div id="hero"> </div>
+
+    <!-- <div id="share-button">+Share</div> -->
+ 
+
+    <div class="container">
+        <div class="item">
+          <div style="text-align: left; font-size: 16px; font-weight: bold; font-style: italic; color: blueviolet">
+            Book now and enjoy the ultimate in comfort and convenience, where every moment is a celebration of your choice
+            Start your journey with us and embrace the magic of our hotel – where every moment is an adventure</div>
+            <img src="/hotelWebsite/pages/img/T8.jpg" alt="Image 1">
+        </div>
+        <div class="hero-text">
+            <p style="color: blueviolet; font-weight: bold; 
+             padding-top: 50%;
+             font-style: italic;">
+                Welcome to Diamond Hotel – <br>Where Hospitality Knows No Bounds! <br>
+                Enjoy your stay! </p>
+        </div>
+        <div class="item">
+          <div style="text-align: left; font-size: 16px; font-weight: bold; font-style: italic;color: blueviolet ">       
+                 Discover the art of relaxation at our hotel, where personalized service and remarkable deals await you
+                 Experience the heart of hospitality with our unbeatable promotions, making your visit truly exceptiona</div>
+            <img src="/hotelWebsite/pages/img/T11.jpeg" alt="Image 2">
+        </div>
+    </div>
+
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex">
+              <img src="/hotelWebsite/pages/img/T4.jpg" class="d-block w-50" alt="Image 1" />
+              <img src="/hotelWebsite/pages/img/simage9.jpg" class="d-block w-50" alt="Image 2" />
+
+              <img src="/hotelWebsite/pages/img/T12.jpeg" class="d-block w-50" alt="Image 1" />
+              <img src="/hotelWebsite/pages/img/simage8.jpg" class="d-block w-50" alt="Image 2" />
+            </div>
+          </div>
+
+          <div class="carousel-item active">
+            <div class="d-flex">
+              <img src="/hotelWebsite/pages/img/T4.jpg" class="d-block w-50" alt="Image 1" />
+              <img src="/hotelWebsite/pages/img/simage9.jpg" class="d-block w-50" alt="Image 2" />
+
+              <img src="/hotelWebsite/pages/img/T12.jpeg" class="d-block w-50" alt="Image 1" />
+              <img src="/hotelWebsite/pages/img/simage8.jpg" class="d-block w-50" alt="Image 2" />
+            </div>
+          </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+ 
+    <script>
+        // Include the footer using JavaScript
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(footer => {
+                document.body.innerHTML += footer;
+            });
+    </script>
+</body>
+
+</html>
